@@ -60,7 +60,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 
         alert.addAction(UIAlertAction(title: "Setting", style: .default, handler: { (_) in
           DispatchQueue.main.async {
-            if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
+            if let settingsURL = URL(string: UIApplicationOpenSettingsURLString) {
               UIApplication.shared.openURL(settingsURL)
             }
           }
